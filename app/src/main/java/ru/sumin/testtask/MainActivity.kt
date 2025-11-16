@@ -16,20 +16,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             AppTheme {
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    LoginScreen(
-                        onLoginSuccess = {
-                            Toast.makeText(
-                                this,
-                                "Переход на Главный экран!",
-                                Toast.LENGTH_SHORT
-                            ).show()
-                        }
-                    )
-                }
+                CoursesAppContent()
             }
         }
     }

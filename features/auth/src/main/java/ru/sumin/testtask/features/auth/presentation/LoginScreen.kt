@@ -18,6 +18,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontWeight
@@ -26,6 +27,7 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import org.koin.androidx.compose.koinViewModel
+import ru.sumin.testtask.core.ui.R
 import ru.sumin.testtask.core.ui.theme.*
 
 @Composable
@@ -194,9 +196,9 @@ fun LoginScreen(
                     .height(50.dp)
                     .padding(end = 8.dp)
             ) {
-                Text(
-                    "VK",
-                    style = MaterialTheme.typography.labelLarge
+                Icon(
+                    painter = painterResource(id = R.drawable.vk),
+                    contentDescription = "VK",
                 )
             }
 
@@ -217,9 +219,9 @@ fun LoginScreen(
                         context.startActivity(intent)
                     }
             ) {
-                Text(
-                    "OK",
-                    style = MaterialTheme.typography.labelLarge
+                Icon(
+                    painter = painterResource(id = R.drawable.ok),
+                    contentDescription = "VK",
                 )
             }
         }

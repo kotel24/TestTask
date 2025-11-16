@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.kotlin.parcelize)
 }
 
 android {
@@ -52,6 +53,27 @@ dependencies {
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
+
+    // Навигация
+    implementation(libs.androidx.navigation.compose)
+
+    // DI (Koin)
+    implementation(libs.koin.androidx.compose)
+
+    // Картинки (Coil)
+    implementation(libs.coil.compose)
+
+    // --- ПОДКЛЮЧЕНИЕ МОДУЛЕЙ ---
+    implementation(project(":features:auth"))
+    implementation(project(":features:home"))
+    implementation(project(":features:favorites"))
+    implementation(project(":features:profile"))
+    
+    implementation(project(":core:ui"))
+    implementation(project(":core:network"))
+    implementation(project(":core:database"))
+
+    // --- Тесты ---
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

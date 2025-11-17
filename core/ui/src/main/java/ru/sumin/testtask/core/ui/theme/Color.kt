@@ -7,6 +7,7 @@ val AppBlack = Color(0xFF151515)
 val AppDarkGray = Color(0xFF24252A)
 val AppLightGray = Color(0xFF32333A)
 val AppWhite = Color(0xFFF2F2F3)
+val AppStoke = Color(0xFF4D555E)
 
 val VkBlue = Color(0xFF0077FF)
 val OrangeTop = Color(0xFFF98509)

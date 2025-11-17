@@ -65,7 +65,7 @@ fun LoginScreen(
                 Text(
                     "example@gmail.com",
                     style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                    color = AppWhite.copy(alpha = 0.5f)
                 )
             },
             textStyle = MaterialTheme.typography.bodyMedium,
@@ -99,7 +99,7 @@ fun LoginScreen(
                 Text(
                     "Введите пароль",
                     style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                    color = AppWhite.copy(alpha = 0.5f)
                 )
             },
             textStyle = MaterialTheme.typography.bodyMedium,
@@ -175,7 +175,7 @@ fun LoginScreen(
 
         HorizontalDivider(
             thickness = 1.dp,
-            color = MaterialTheme.colorScheme.surfaceVariant
+            color = AppStoke
         )
 
         Spacer(modifier = Modifier.height(32.dp))

@@ -83,7 +83,7 @@ fun CourseItem(
                     Icon(
                         painter = if (course.isFavorite) painterResource(R.drawable.bookmark_fill) else painterResource(R.drawable.bookmark) ,
                         contentDescription = "Favorite",
-                        tint = AppGreen,
+                        tint = if (course.isFavorite) AppGreen else AppWhite,
                         modifier = Modifier.size(24.dp)
                     )
                 }

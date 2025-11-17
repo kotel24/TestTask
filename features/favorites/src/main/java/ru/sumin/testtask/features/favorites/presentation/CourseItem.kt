@@ -1,4 +1,4 @@
-package ru.sumin.testtask.features.home.presentation
+package ru.sumin.testtask.features.favorites.presentation
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -40,13 +40,13 @@ import ru.sumin.testtask.core.ui.theme.AppGreen
 import ru.sumin.testtask.core.ui.theme.AppWhite
 import ru.sumin.testtask.core.ui.theme.Glass
 import ru.sumin.testtask.core.ui.theme.formatDate
-import ru.sumin.testtask.features.home.domain.entity.Course
+import ru.sumin.testtask.features.favorites.domain.entity.Course
 
 @Composable
 fun CourseItem(
     course: Course,
-    onFavoriteClick: () -> Unit,
-    onCourseClick: (Int) -> Unit
+    onCourseClick: (Int) -> Unit,
+    onFavoriteClick: () -> Unit
 ) {
 
     Card(

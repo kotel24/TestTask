@@ -175,7 +175,7 @@ fun LoginScreen(
 
         HorizontalDivider(
             thickness = 1.dp,
-            color = AppStoke
+            color = AppStroke
         )
 
         Spacer(modifier = Modifier.height(32.dp))

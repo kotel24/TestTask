@@ -30,7 +30,7 @@ fun HomeScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.Black)
+            .background(AppBlack)
             .padding(horizontal = 16.dp)
     ) {
         Spacer(modifier = Modifier.height(40.dp))
@@ -102,7 +102,8 @@ fun HomeScreen(
                     items(state.courses) { course ->
                         CourseItem(
                             course = course,
-                            onCourseClick = { }
+                            onCourseClick = { },
+                            onFavoriteClick = { viewModel.onFavoriteClicked(course) }
                         )
                     }
                 }

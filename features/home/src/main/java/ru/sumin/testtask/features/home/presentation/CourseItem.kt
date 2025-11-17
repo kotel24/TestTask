@@ -45,6 +45,7 @@ import ru.sumin.testtask.features.home.domain.entity.Course
 @Composable
 fun CourseItem(
     course: Course,
+    onFavoriteClick: () -> Unit,
     onCourseClick: (Int) -> Unit
 ) {
 
@@ -77,7 +78,7 @@ fun CourseItem(
                         .size(48.dp)
                         .clip(CircleShape)
                         .background(Glass)
-                        .clickable { },
+                        .clickable { onFavoriteClick() },
                     contentAlignment = Alignment.Center
                 ) {
                     Icon(
